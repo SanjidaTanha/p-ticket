@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="style.css">
     <title>p-ticket</title>
 </head>
-<body class="container mx-auto">
+<body class="container mx-auto bg-[#F7F8F8]">
     <!-- landing page -->
     <!-- buy ticket section -->
     <section class="px-4 lg:px-16">
         <header>
-            <nav>
+            
+          
+          
+          <nav>
                 <div class="navbar bg-base-100">
                     <div class="navbar-start">
                       <a class="btn btn-ghost font-extrabold text-4xl ">P-Ticket</a>
@@ -32,40 +35,62 @@
                     </div>
                   </div>
             </nav>
+
+
+
+
             <main>
                 <div class="hero w-full h-[550px]" style="background-image: url(./images/banner.png); " >
                     <div class="hero-content text-center text-neutral-content">
                       <div class="w-full">
                         <h1 class="mb-5 text-6xl font-extrabold">End-to-End Travel with <br><span class="text-[#1DD100]">P Paribahan</span></h1>
                         <p class="mb-5">Looking for great deals on bus tickets? We'll make it easy for you! Get the lowest prices, and renowned bus operators<br> - all in one place.</p>
-                        <button class="primaryBtn">Buy Tickets</button>
+                        <a href="#ticket_container" class="primaryBtn">Buy Tickets</a>
                       </div>
                     </div>
                   </div>
             </main>
+
+
         </header>
+
+
+        <!-- coupon card section -->
         <div class="mt-20">
+
+
             <div class="my-10">
                 <p class="text-center font-bold text-4xl">Best offers for you</p>
             </div>
+
+            
             <div class="flex flex-col lg:flex-row gap-10">
-                <div class="hero flex-1 h-[220px] flex justify-between px-10"    style="background-image: url(./images/Group\ 115.png);">
+
+
+                <div class="hero flex-1 h-[220px] flex justify-between w-28"    style="background-image: url(./images/Group\ 115.png);">
+
                   <ul>
                     <li class="font-black text-4xl text-[#030712CC]">15% OFF</li>
                     <li class="text-xl font-semibold text-[#030712CC]">on your next purchase</li>
                     <li class="font-normal text-lg text-[#03071280]">use by January 2024</li>
                   </ul>
+
                   <ul class="text-center">
                     <li class="font-bold text-3xl text-[#030712]">NEW<sub>15</sub></li>
                     <li class="text-xl font-medium text-[#03071266]">Coupon Code</li>
                   </ul>
+
                 </div>
-                <div class="hero flex-1 h-[220px] flex justify-around px-10" style="background-image: url(./images/Rectangle\ 8.png);">
+
+
+                <div class="hero flex-1 h-[220px] flex justify-around w-28" style="background-image: url(./images/Rectangle\ 8.png);">
+
                   <ul>
                     <li class="font-black text-4xl text-[#030712CC]">20% OFF</li>
                     <li class="text-xl font-semibold text-[#030712CC]">on your next purchase</li>
                     <li class="font-normal text-lg text-[#03071280]">use by January 2024</li>
                   </ul>
+
                   <ul>
                     <li><img src="./images/cupon-devider.png" alt=""></li>
                   </ul>
@@ -73,23 +98,95 @@
                     <li class="font-bold text-3xl text-[#030712]">Couple 20</li>
                     <li class="text-xl font-medium text-[#03071266]">Coupon Code</li>
                   </ul>
+
                 </div>
+
+
             </div>
+
+
             <div class="my-10 flex justify-center">
               <a class="btn text-xl font-bold text-[#1DD100] bg-white border-[#1DD10066]" alt="">See All Offers</a>
             </div>
+
                 
         </div>
         
     </section>
-    <section class="mt-20 border-t-2 border-green-400 rounded-t-full ">
+    <!-- info section -->
+    <section class="mt-20 border-t-2 border-green-400 rounded-t-3xl ">
       <div class="px-4 lg:px-16">
+
+
         <div class="mt-20 space-y-5">
           <h1 class="font-raleway text-4xl font-bold text-center">P.H Paribahan</h1>
           <p class="font-inter text-base font-normal text-center">The best bus seat plan prioritizes passenger comfort, safety, and convenience.<br>With ample legroom, well-cushioned seats, and adjustable features like reclining<br> options and headrests, passengers can relax during their journey.</p>
         </div>
-        <div>
-          
+
+
+        <div class="mt-14">
+          <div class="flex flex-col justify-between items-center lg:flex-row bg-[#FFFFFF]  rounded-3xl px-10">
+
+              <div class="w-[70%]">
+                  <div class="flex flex-col justify-between lg:flex-row"> 
+                    
+                    <div class="flex justify-between gap-3 items-center">
+                          <img src="images/bus-logo.png">
+                          <div>
+                              <h2 class="font-raleway text-2xl font-bold">Greenline Paribahan</h2>
+                              <p class="font-inter text-base font-normal text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+                          </div>
+                    </div>
+
+                    <div>
+                      <a class="btn text-xl font-bold text-[#1DD100] bg-[#1DD10026]" alt=""><img src="./images/seat-green.png" alt=""><span id="seatLeft">40</span>Seats left</a>
+                    </div>
+
+                  </div>
+      
+                  <div class="bg-[#F7F8F8] rounded-3xl mt-8 p-6">
+
+                      <ul class="flex justify-between">
+                        <li class="font-semibold text-base font-raleway text-[#03071299]">Route</li>
+                        <li class="font-raleway text-lg font-semibold text-[#030712]">Dhaka  - Sylhet</li>
+                      </ul>
+
+                      <div class="border border-dashed border-[#03071233] my-4"></div>
+
+                      <ul class="flex justify-between">
+                        <li class="font-semibold text-base font-raleway text-[#03071299]">Departure Time</li>
+                        <li class="font-raleway text-lg font-semibold text-[#030712]">9:00 PM</li>
+                      </ul>
+
+                      <div class="border border-dashed border-[#03071233] my-4"></div>
+                      
+                      <div class="flex flex-wrap gap-2 lg:flex-row justify-around">
+                        <button class="btn bg-[#0307120D] font-inter text-base font-medium text-[#030712CC] flex-1">
+                          Boarding Point - Laxmipur
+                        </button>
+                        <button class="btn bg-[#0307120D] font-inter text-base font-medium text-[#030712CC] flex-1">
+                          Dropping Point - Bogura
+                        </button>
+                        <button class="btn bg-[#0307120D] font-inter text-base font-medium text-[#030712CC] flex-1">
+                          Est. Time - 11 Hour
+                        </button>
+                      </div>
+
+                  </div>
+
+              </div>
+  
+              <div class="hidden lg:block">
+                  <img src="images/info-devider.png" alt="">
+              </div>
+
+              <div class="flex flex-col items-center justify-center mr-8">
+                  <div><img src="images/fare.png" alt=""></div>
+                  <h1 class="font-raleway text-4xl font-bold text-[#030712]">550 Taka</h1>
+                  <h3 class="font-raleway text-3xl font-semibold text-[#03071299]">Per Seat</h3>
+              </div>
+  
+          </div>
         </div>
 
 
@@ -97,8 +194,262 @@
 
     </section>
 
+
     <!-- seat plan section -->
-    <section>
+    <section id="ticket_container" class=" px-4 lg:px-16 mt-20">
+      <div class="bg-white rounded-3xl p-10 flex flex-col lg:flex-row gap-4">
+
+        <div class="w-[60%]">
+          <h3 class="font-raleway text-xl font-semibold text-[#030712]">Select Your Seat</h3>
+
+          <div class="border border-dashed border-[#03071233] my-4"></div>
+
+          <div class="flex justify-between">
+            <button class="font-semibold text-base font-raleway text-[#03071299] flex" ><img src="./images/seat-gray.png" alt="">Available</button>
+            <button class="font-inter text-base font-medium text-[#1DD100] flex"><img src="./images/seat-green-filled.png" alt="">Selected</button>
+          </div>
+
+          <div class="border border-dashed border-[#03071233] my-4"></div>
+          
+          <div class="text-end">
+            <button class="btn"><img src="./images/tabler-icon-steering-wheel.png" alt=""></button>
+          </div>
+          
+          <!-- seats -->
+          <section id="seat_plan">
+            <!-- A -->
+          <div class="flex flex-col lg:flex-row gap-7 items-center justify-start mt-6">
+            <div class="font-inter text-base font-medium text-[#03071280]">A</div>
+            <div class="flex flex-col lg:flex-row gap-6 lg:gap-24">
+              <div class="flex gap-6 flex-1">
+                <button id="a1" class="btn w-28 font-inter text-base font-medium text-[#03071280]">A1</button>
+                <button id="a2" class="btn w-28 font-inter text-base font-medium text-[#03071280]">A2</button>
+              </div>
+              <div class="flex gap-6 flex-1">
+                <button id="a3" class="btn w-28 font-inter text-base font-medium text-[#03071280]">A3</button>
+                <button id="a4" class="btn w-28 font-inter text-base font-medium text-[#03071280]">A4</button>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- B -->
+          <div class="flex  flex-col lg:flex-row gap-7 items-center justify-start mt-6">
+            <div class="font-inter text-base font-medium text-[#03071280]">B</div>
+            <div class="flex flex-col lg:flex-row gap-6 lg:gap-24">
+              <div class="flex gap-6 flex-1">
+                <button  id="b1"  class="btn w-28 font-inter text-base font-medium text-[#03071280]">B1</button>
+                <button id="b2"  class="btn w-28 font-inter text-base font-medium text-[#03071280]">B2</button>
+              </div>
+              <div class="flex gap-6 flex-1">
+                <button  id="b3" class="btn w-28 font-inter text-base font-medium text-[#03071280]">B3</button>
+                <button id="b4"  class="btn w-28 font-inter text-base font-medium text-[#03071280]">B4</button>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- C -->
+          <div class="flex  flex-col lg:flex-row gap-7 items-center justify-start mt-6">
+            <div class="font-inter text-base font-medium text-[#03071280]">C</div>
+            <div class="flex flex-col lg:flex-row gap-6 lg:gap-24">
+              <div class="flex gap-6 flex-1">
+                <button id="c1"  class="btn w-28 font-inter text-base font-medium text-[#03071280]">C1</button>
+                <button id="c2"  class="btn w-28 font-inter text-base font-medium text-[#03071280]">C2</button>
+              </div>
+              <div class="flex gap-6 flex-1">
+                <button  id="c3" class="btn w-28 font-inter text-base font-medium text-[#03071280]">C3</button>
+                <button  id="c4" class="btn w-28 font-inter text-base font-medium text-[#03071280]">C4</button>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- D -->
+          <div class="flex  flex-col lg:flex-row gap-7 items-center justify-start mt-6">
+            <div class="font-inter text-base font-medium text-[#03071280]">D</div>
+            <div class="flex flex-col lg:flex-row gap-6 lg:gap-24">
+              <div class="flex gap-6 flex-1">
+                <button id="d1"  class="btn w-28 font-inter text-base font-medium text-[#03071280]">D1</button>
+                <button id="d2"  class="btn w-28 font-inter text-base font-medium text-[#03071280]">D2</button>
+              </div>
+              <div class="flex gap-6 flex-1">
+                <button  id="d3" class="btn w-28 font-inter text-base font-medium text-[#03071280]">D3</button>
+                <button id="d4"  class="btn w-28 font-inter text-base font-medium text-[#03071280]">D4</button>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- E -->
+          <div class="flex  flex-col lg:flex-row gap-7 items-center justify-start mt-6">
+            <div class="font-inter text-base font-medium text-[#03071280]">E</div>
+            <div class="flex flex-col lg:flex-row gap-6 lg:gap-24">
+              <div class="flex gap-6 flex-1">
+                <button  id="e1" class="btn w-28 font-inter text-base font-medium text-[#03071280]">E1</button>
+                <button  id="e2" class="btn w-28 font-inter text-base font-medium text-[#03071280]">E2</button>
+              </div>
+              <div class="flex gap-6 flex-1">
+                <button id="e3"  class="btn w-28 font-inter text-base font-medium text-[#03071280]">E3</button>
+                <button id="e4"  class="btn w-28 font-inter text-base font-medium text-[#03071280]">E4</button>
+              </div>
+            </div>
+          </div>
+
+
+           <!-- F -->
+          <div class="flex  flex-col lg:flex-row gap-7 items-center justify-start mt-6">
+            <div class="font-inter text-base font-medium text-[#03071280]">F</div>
+            <div class="flex flex-col lg:flex-row gap-6 lg:gap-24">
+              <div class="flex gap-6 flex-1">
+                <button  id="f1" class="btn w-28 font-inter text-base font-medium text-[#03071280]">F1</button>
+                <button  id="f2" class="btn w-28 font-inter text-base font-medium text-[#03071280]">F2</button>
+              </div>
+              <div class="flex gap-6 flex-1">
+                <button id="f3"  class="btn w-28 font-inter text-base font-medium text-[#03071280]">F3</button>
+                <button id="f4"  class="btn w-28 font-inter text-base font-medium text-[#03071280]">F4</button>
+              </div>
+            </div>
+          </div>
+
+           <!-- G -->
+          <div class="flex  flex-col lg:flex-row gap-6 items-center justify-start mt-6">
+            <div class="font-inter text-base font-medium text-[#03071280]">G</div>
+            <div class="flex flex-col lg:flex-row gap-6 lg:gap-24">
+              <div class="flex gap-6 flex-1">
+                <button  id="g1" class="btn w-28 font-inter text-base font-medium text-[#03071280]">G1</button>
+                <button  id="g2" class="btn w-28 font-inter text-base font-medium text-[#03071280]">G2</button>
+              </div>
+              <div class="flex gap-6 flex-1">
+                <button  id="g3" class="btn w-28 font-inter text-base font-medium text-[#03071280]">G3</button>
+                <button id="g4" class="btn w-28 font-inter text-base font-medium text-[#03071280]">G4</button>
+              </div>
+            </div>
+          </div>
+
+
+           <!-- H -->
+          <div class="flex  flex-col lg:flex-row gap-6 items-center justify-start mt-6">
+            <div class="font-inter text-base font-medium text-[#03071280]">H</div>
+            <div class="flex flex-col lg:flex-row gap-6 lg:gap-24">
+              <div class="flex gap-6 flex-1">
+                <button id="h1" class="btn w-28 font-inter text-base font-medium text-[#03071280]">H1</button>
+                <button id="h2" class="btn w-28 font-inter text-base font-medium text-[#03071280]">H2</button>
+              </div>
+              <div class="flex gap-6 flex-1">
+                <button id="h3" class="btn w-28 font-inter text-base font-medium text-[#03071280]">H3</button>
+                <button id="h4" class="btn w-28 font-inter text-base font-medium text-[#03071280]">H4</button>
+              </div>
+            </div>
+          </div>
+
+
+           <!-- I -->
+          <div class="flex  flex-col lg:flex-row gap-8 items-center justify-start mt-6">
+            <div class="font-inter text-base font-medium text-[#03071280]">I</div>
+            <div class="flex flex-col lg:flex-row gap-6 lg:gap-24">
+              <div class="flex gap-6 flex-1">
+                <button id="i1" class="btn w-28 font-inter text-base font-medium text-[#03071280]">I1</button>
+                <button id="i2" class="btn w-28 font-inter text-base font-medium text-[#03071280]">I2</button>
+              </div>
+              <div class="flex gap-6 flex-1">
+                <button id="i3" class="btn w-28 font-inter text-base font-medium text-[#03071280]">I3</button>
+                <button id="i4" class="btn w-28 font-inter text-base font-medium text-[#03071280]">I4</button>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- J -->
+          <div class="flex  flex-col lg:flex-row gap-8 items-center justify-start mt-6">
+            <div class="font-inter text-base font-medium text-[#03071280]">J</div>
+            <div class="flex flex-col lg:flex-row gap-6 lg:gap-24">
+              <div class="flex gap-6 flex-1">
+                <button id="j1" class="btn w-28 font-inter text-base font-medium text-[#03071280]">J1</button>
+                <button id="j2" class="btn w-28 font-inter text-base font-medium text-[#03071280]">J2</button>
+              </div>
+              <div class="flex gap-6 flex-1">
+                <button id="j3"  class="btn w-28 font-inter text-base font-medium text-[#03071280]">J3</button>
+                <button id="j4" class="btn w-28 font-inter text-base font-medium text-[#03071280]">J4</button>
+              </div>
+            </div>
+          </div>
+          </section>
+
+          
+        </div>
+        
+        
+        
+        <div class="hidden lg:block border border-dashed border-[#03071233] mx-4">
+        </div>
+
+        <div class="flex-1">
+          <h3 class="font-raleway text-xl font-semibold text-[#030712]">Select Your Seat</h3>
+
+          <div class="border border-dashed border-[#03071233] my-4"></div>
+
+          <div class="bg-[#F7F8F8] rounded-3xl p-6 mt-6" >
+            <div class="flex justify-between">
+              <p class="font-inter text-base font-medium text-[#030712]">Seat <span id="selectedSeatNumber"   class="bg-[#1DD100] rounded-lg px-2 text-[#FFFFFF] font-inter text-xs font-bold">0</span></p>  
+              <p class="font-inter text-base font-medium text-[#030712]">Class</p>
+              <p class="font-inter text-base font-medium text-[#030712]">Price</p>
+            </div>
+
+            <div class="border border-dashed border-[#03071233] my-4"></div>
+            <!-- Selected Seat List Append -->
+            <div id="selectedSeatInfo">
+              
+            </div>
+
+            <div class="border border-dashed border-[#03071233] my-4"></div>
+
+            <div class="hidden">
+              <div class="border-b-2  border-[#03071233] my-4"></div>
+            </div>
+
+            <div class="flex justify-between mt-4">
+              <h3  class="font-inter text-base font-medium text-[#030712]">Total Price</h3>
+              <h3 class="font-inter text-base font-medium text-[#030712]">BDT <span id="totalPrice">0</span></h3>
+            </div>
+
+            <div id="couponField" class="mt-4">
+              <label class="bg-white rounded-lg py-2 px-3 flex items-center gap-2">
+                <input id="coupon" type="text" class="grow" placeholder="Have any coupon?" />
+                <button onclick="couponValidation()" class="btn bg-[#1DD100] text-[#FFFFFF] font-inter text-base font-semibold">Apply</button>
+              </label>
+            </div>
+
+            <div class="flex justify-between mt-4">
+              <h3  class="font-inter text-base font-medium text-[#030712]">Grand Total</h3>
+              <h3 class="font-inter text-base font-medium text-[#030712]">BDT <span id="grandTotal">0</span></h3>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-4 mt-4">
+            <p class="font-inter text-base font-semibold">Passenger Name*</p>
+            <input id="name" type="text" placeholder="Enter your name" class=" border border-[#0307121A] p-4 flex-1 rounded-lg">
+
+            <p class="font-inter text-base font-semibold">Phone Number*</p>
+            <input id="phone" type="number" placeholder="Enter your phone number" class=" border border-[#0307121A] p-4 flex-1 rounded-lg">
+
+            <p class="font-inter text-base font-semibold">Email ID</p>
+            <input id="email" placeholder="Enter your email" class=" border border-[#0307121A] p-4 flex-1 rounded-lg">
+            
+            <button class="btn bg-[#1DD100] text-[#FFFFFF] font-inter text-base font-semibold">Apply</button>
+          
+            <div class="flex justify-between">
+              <p class="font-inter text-base font-normal text-[#03071299] underline"> Terms and Conditions</p>
+              <p class="font-inter text-base font-normal text-[#03071299] underline"> Cancilation Policy</p>
+            </div>
+          </div>
+    
+
+        </div>
+
+
+
+      </div>
     </section>
 
     <!--footer section  -->
@@ -108,5 +459,6 @@
     <!-- next page -->
     <section>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>

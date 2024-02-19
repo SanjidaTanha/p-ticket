@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .hero{
     border-radius: 32px;
 }
