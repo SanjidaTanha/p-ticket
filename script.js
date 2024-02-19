@@ -74,10 +74,15 @@ function couponValidation() {
     if (selectedSeatNumber == 4) {
         if (coupon == 'NEW15') {
             document.getElementById('grandTotal').innerText = totalPrice - (parseInt(totalPrice * 15) / 100);
-
+            document.getElementById('discountAmount').innerText = parseInt(totalPrice*15)/100;
+            document.getElementById('Discount').classList.add('flex');
+            document.getElementById('Discount').classList.remove('hidden');
             document.getElementById('couponField').classList.add('hidden');
         } else if (coupon == 'Couple 20') {
             document.getElementById('grandTotal').innerText = totalPrice - (parseInt(totalPrice * 20) / 100);
+            document.getElementById('discountAmount').innerText = parseInt(totalPrice*20)/100;
+            document.getElementById('Discount').classList.add('flex');
+            document.getElementById('Discount').classList.remove('hidden');
 
             document.getElementById('couponField').classList.add('hidden');
         } else {
