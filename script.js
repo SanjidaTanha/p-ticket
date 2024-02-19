@@ -2,6 +2,8 @@ let totalPrice = document.getElementById('totalPrice').innerText;
 let grandTotal = document.getElementById('grandTotal').innerText;
 let selectedSeatNumber = document.getElementById('selectedSeatNumber').innerHTML;
 let totalSeats = document.getElementById('seatLeft').innerText;
+let apply = document.getElementById('apply-btn');
+let continueBtn = document.getElementById('continue-btn');
 totalPrice = parseInt(totalPrice);
 grandTotal = parseInt(grandTotal);
 totalSeats = parseInt(totalSeats);
@@ -47,9 +49,12 @@ for(let i=0; i<seatID.length; i++){
                 else
                     p.textContent = '550';
 
+
                 div.appendChild(p);
+                p.classList.add("text-[#03071299]");
             }    
             selectedSeatInfo.appendChild(div);
+            
 
 
             }
@@ -79,8 +84,37 @@ function couponValidation() {
             alert('Wrong Coupon!');
         }
     } else {
-        alert('You need to buy 4 tickets to use coupon!')
+        alert('You need to buy 4 tickets to use coupon!');
     }
 
 }
+
+// apply button
+apply.addEventListener('click', function(){
+    let phoneNumber = document.getElementById('phone').value;
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    if(phoneNumber=='' || name=='' || email==''){
+        alert('You need to fill-up the required info to apply!'); 
+    }
+    else{
+        document.getElementById('success').classList.remove('hidden');
+        document.getElementById('ticket_container').classList.add('hidden');
+        document.getElementById('info').classList.add('hidden');
+        document.getElementById('buy-ticket').classList.add('hidden');
+
+    }
+
+})
+
+// continue Button 
+continueBtn.addEventListener('click', function(){
+    document.getElementById('success').classList.add('hidden');
+    document.getElementById('ticket_container').classList.remove('hidden');
+    document.getElementById('info').classList.remove('hidden');
+    document.getElementById('buy-ticket').classList.remove('hidden');
+
+})
+
+
 
